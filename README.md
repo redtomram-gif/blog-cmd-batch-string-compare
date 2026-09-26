@@ -6,9 +6,9 @@ From the MSDN `thottams` blog archive.
 
 ## Building
 
-```text
-a.cmd true
-```
+<!-- Console -->
+
+    a.cmd true
 
 ## Note
 
