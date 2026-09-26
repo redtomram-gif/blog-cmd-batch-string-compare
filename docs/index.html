@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>blog-cmd-batch-string-compare</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="post">
+<header class="site">
+  <a class="brand" href="https://redtomram-gif.github.io/thottams-blog-archive/">Thottam R. Sriram</a>
+  <span class="tag">Code sample &middot; MSDN blog archive</span>
+</header>
+<main>
+<article>
+<h1>Batch file string comparison</h1>
+<p class="meta">
+  <code>blog-cmd-batch-string-compare</code>
+  
+</p>
+<p>Small <code>cmd</code> batch snippet showing case-insensitive string comparison with <code>if /I NOT</code> and a label-based jump.</p>
+
+<h2>Source</h2>
+<figure class="code">
+<figcaption>a.cmd <span class="lang">Batch</span></figcaption>
+<pre><code class="hljs"><span class="hljs-built_in">SET</span> PeerCloudGPMEnabled=%<span class="hljs-number">1</span>
+
+<span class="hljs-built_in">echo</span> <span class="hljs-variable">%PeerCloudGPMEnabled%</span>
+
+<span class="hljs-keyword">if</span> /I <span class="hljs-keyword">NOT</span> &quot;<span class="hljs-variable">%PeerCloudGPMEnabled%</span>&quot; == &quot;true&quot; <span class="hljs-keyword">goto</span> :PeerCloudGPMEnabledEND
+<span class="hljs-built_in">echo</span> inside <span class="hljs-keyword">if</span>
+:PeerCloudGPMEnabledEND</code></pre>
+</figure>
+</article>
+<p class="back"><a href="https://redtomram-gif.github.io/thottams-blog-archive/">&larr; All posts</a></p>
+</main>
+<footer class="site">
+  Part of the <a href="https://redtomram-gif.github.io/thottams-blog-archive/">MSDN blog archive</a>.
+  Source on <a href="https://github.com/redtomram-gif/blog-cmd-batch-string-compare">GitHub</a>.
+</footer>
+</body>
+</html>
